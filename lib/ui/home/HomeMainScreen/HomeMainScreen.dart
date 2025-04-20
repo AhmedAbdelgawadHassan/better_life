@@ -2,7 +2,7 @@ import 'package:better_life/ui/home/HomeMainScreen/Widgets/EarlyProtection_Conta
 import 'package:better_life/ui/home/HomeMainScreen/Widgets/HealthArticles_Section.dart';
 import 'package:better_life/ui/home/HomeMainScreen/Widgets/TopDectors_Section.dart';
 import 'package:better_life/ui/home/HomeMainScreen/Widgets/TopSection.dart';
-import 'package:better_life/ui/home/HomeMainScreen/Widgets/customSearchTextField.dart';
+import 'package:better_life/ui/home/HomeMainScreen/Widgets/Search_Container.dart';
 import 'package:flutter/material.dart';
 
 class Homemainscreen extends StatelessWidget {
@@ -18,9 +18,9 @@ class Homemainscreen extends StatelessWidget {
             child: Column(
               children: [
                 Topsection(Notifications_Onpressed: (){}),      // Top Section contains Text and Notification Icon,
-                const SizedBox(height: 15,),
-                const customSearchTextField(hintText: "Search doctor, drugs, articles...",),
-                const SizedBox(height: 15,),
+                const SizedBox(height: 25,),
+                const Search_Container(),
+                const SizedBox(height: 30,),
                 const EarlyProtection_Container(),
                 const SizedBox(height: 15,),
                  TopDectors_Section(SeeALl_onPressed: () {},),

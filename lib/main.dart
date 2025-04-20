@@ -66,6 +66,7 @@ class MyApp extends StatelessWidget {
         VerificationScreen.routName:(_)=>VerificationScreen(userInput: ''),
         CreateNewPasswordScreen.routeName:(_)=>CreateNewPasswordScreen(),
         profileScreen.routeName:(_)=>profileScreen(),
+
       },
       initialRoute: SplashScreen.routeName,
     );

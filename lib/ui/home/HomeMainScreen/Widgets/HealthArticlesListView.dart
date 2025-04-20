@@ -9,12 +9,13 @@ class Healtharticleslistview extends StatelessWidget {
     return ListView.builder(
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
-      itemCount: 5,
+      itemCount: 10,
       itemBuilder: (context, index) {
-        return  const Padding(
-          padding:  EdgeInsets.only(bottom: 10),
+        return const Padding(
+          padding: EdgeInsets.only(bottom: 10),
           child: Articleitem(
-            ArticleTitle: "The 25 Healthiest Fruits You Can Eat,\n According to a Nutritionist",
+            ArticleTitle:
+                "The 25 Healthiest Fruits You Can Eat,\n According to a Nutritionist",
             ArticleTime: "5min read",
             articleHistory: "Jun 10, 2021 ",
             ArtcleImage: "assets/images/homeScreen/Rectangle 460.png",
