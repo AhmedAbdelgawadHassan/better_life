@@ -1,3 +1,4 @@
+import 'package:better_life/ui/home/HomeMainScreen/HomeMainScreen.dart';
 import 'package:better_life/ui/home/profileScreen/profileScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +13,9 @@ class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
 
   final List<Widget> pages = [
-    Center(child: Text("Home", style: TextStyle(fontSize: 22))),
-    Center(child: Text("Messages", style: TextStyle(fontSize: 22))),
-    Center(child: Text("Appointments", style: TextStyle(fontSize: 22))),
+   const Homemainscreen(),
+   const  Center(child: Text("Messages", style: TextStyle(fontSize: 22))),
+   const  Center(child: Text("Appointments", style: TextStyle(fontSize: 22))),
     profileScreen(),
   ];
 
@@ -25,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
       bottomNavigationBar: Container(
         padding: const EdgeInsets.symmetric(vertical: 12),
-        decoration: BoxDecoration(
+        decoration:const  BoxDecoration(
           color: Colors.white,
           boxShadow: [
             BoxShadow(color: Colors.black12, blurRadius: 4),

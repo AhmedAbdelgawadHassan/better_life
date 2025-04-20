@@ -54,6 +54,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'BetterLife',
       theme: appTheme,
       routes: {
@@ -65,7 +66,6 @@ class MyApp extends StatelessWidget {
         VerificationScreen.routName:(_)=>VerificationScreen(userInput: ''),
         CreateNewPasswordScreen.routeName:(_)=>CreateNewPasswordScreen(),
         profileScreen.routeName:(_)=>profileScreen(),
-
       },
       initialRoute: SplashScreen.routeName,
     );

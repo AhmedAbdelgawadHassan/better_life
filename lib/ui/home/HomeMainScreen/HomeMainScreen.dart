@@ -1,0 +1,38 @@
+import 'package:better_life/ui/home/HomeMainScreen/Widgets/EarlyProtection_Container.dart';
+import 'package:better_life/ui/home/HomeMainScreen/Widgets/HealthArticles_Section.dart';
+import 'package:better_life/ui/home/HomeMainScreen/Widgets/TopDectors_Section.dart';
+import 'package:better_life/ui/home/HomeMainScreen/Widgets/TopSection.dart';
+import 'package:better_life/ui/home/HomeMainScreen/Widgets/customSearchTextField.dart';
+import 'package:flutter/material.dart';
+
+class Homemainscreen extends StatelessWidget {
+  const Homemainscreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return  SafeArea(
+      child: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.only(left: 25),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Topsection(Notifications_Onpressed: (){}),      // Top Section contains Text and Notification Icon,
+                const SizedBox(height: 15,),
+                const customSearchTextField(hintText: "Search doctor, drugs, articles...",),
+                const SizedBox(height: 15,),
+                const EarlyProtection_Container(),
+                const SizedBox(height: 15,),
+                 TopDectors_Section(SeeALl_onPressed: () {},),
+                const SizedBox(height: 15,),
+                 HealthArticles_Section(SeeAll_onPressed: () {},),
+            
+            
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
