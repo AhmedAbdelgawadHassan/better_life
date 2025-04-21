@@ -1,3 +1,4 @@
+import 'package:better_life/ui/home/HomeMainScreen/TopDoctorsScreen.dart';
 import 'package:better_life/ui/home/HomeMainScreen/Widgets/EarlyProtection_Container.dart';
 import 'package:better_life/ui/home/HomeMainScreen/Widgets/HealthArticles_Section.dart';
 import 'package:better_life/ui/home/HomeMainScreen/Widgets/TopDectors_Section.dart';
@@ -23,7 +24,7 @@ class Homemainscreen extends StatelessWidget {
                 const SizedBox(height: 30,),
                 const EarlyProtection_Container(),
                 const SizedBox(height: 15,),
-                 TopDectors_Section(SeeALl_onPressed: () {},),
+                 TopDectors_Section(SeeALl_onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) {return const Topdoctorsscreen();},));},),
                 const SizedBox(height: 15,),
                  HealthArticles_Section(SeeAll_onPressed: () {},),
             

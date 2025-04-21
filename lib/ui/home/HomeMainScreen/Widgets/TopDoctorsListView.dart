@@ -1,3 +1,4 @@
+import 'package:better_life/ui/home/HomeMainScreen/DoctorDetailsScreen.dart';
 import 'package:better_life/ui/home/HomeMainScreen/Widgets/DoctorItem.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +13,14 @@ class Topdoctorslistview extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 5,
         itemBuilder: (context, index) {
-          return const Padding(
+          return  Padding(
             padding: EdgeInsets.only(right: 10),
             child:  DoctorItem(
+              onpressed: () {
+                 Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return Doctordetailsscreen();
+                  }));
+              },
                 DoctorImage:
                     "assets/images/homeScreen/pexels-cedric-fauntleroy-4270371@2x.png",
                 DoctorName: "Dr ALi Ebrahim",

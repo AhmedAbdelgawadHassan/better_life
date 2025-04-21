@@ -1,3 +1,4 @@
+import 'package:better_life/ui/home/HomeMainScreen/DoctorDetailsScreen.dart';
 import 'package:better_life/ui/home/HomeMainScreen/Widgets/RecommendedDoctorItem.dart';
 import 'package:flutter/material.dart';
 
@@ -12,12 +13,14 @@ class RecommendedDoctorsListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 10,
         itemBuilder: (context, index) {
-          return  Padding(
-            padding:  const EdgeInsets.only(right: 5),
-            child:  Recommendeddoctoritem(
-              onpressed: () {
-                
-              },
+          return Padding(
+            padding: const EdgeInsets.only(right: 5),
+            child: Recommendeddoctoritem(
+                onpressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const Doctordetailsscreen();
+                  }));
+                },
                 DoctorImage:
                     "assets/images/homeScreen/pexels-cedric-fauntleroy-4270371@2x.png",
                 DoctorName: "Dr ALi Ebrahim",

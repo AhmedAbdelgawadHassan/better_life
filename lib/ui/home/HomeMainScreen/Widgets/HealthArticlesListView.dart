@@ -9,7 +9,7 @@ class Healtharticleslistview extends StatelessWidget {
     return ListView.builder(
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
-      itemCount: 10,
+      itemCount: 5,
       itemBuilder: (context, index) {
         return const Padding(
           padding: EdgeInsets.only(bottom: 10),
