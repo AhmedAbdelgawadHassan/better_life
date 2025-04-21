@@ -1,3 +1,4 @@
+import 'package:better_life/ui/home/HomeMainScreen/Widgets/payemntShowDailog.dart';
 import 'package:flutter/material.dart';
 
 class PaymentMethodSection extends StatelessWidget {
@@ -63,20 +64,25 @@ class PaymentMethodSection extends StatelessWidget {
               ],
             ),
             const Spacer(),
-            Container(
-              alignment: Alignment.center,
-              width: 225,
-              height: 50,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50),
-                  color: const Color(0xff199A8E)),
-              child: const Text(
-                "Booking",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600),
-                textAlign: TextAlign.center,
+            InkWell(
+              onTap: () {
+              PaymentShowDailog.showAutoCloseDialog(context);    // 
+              },
+              child: Container(
+                alignment: Alignment.center,
+                width: 225,
+                height: 50,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: const Color(0xff199A8E)),
+                child: const Text(
+                  "Booking",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
           ],

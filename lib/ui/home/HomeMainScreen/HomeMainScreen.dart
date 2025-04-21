@@ -18,7 +18,7 @@ class Homemainscreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Topsection(Notifications_Onpressed: (){}),      // Top Section contains Text and Notification Icon,
+                Topsection(Notifications_Onpressed: (){},text: 'Find your desire\n healt solution',),      // Top Section contains Text and Notification Icon,
                 const SizedBox(height: 25,),
                 const Search_Container(),
                 const SizedBox(height: 30,),

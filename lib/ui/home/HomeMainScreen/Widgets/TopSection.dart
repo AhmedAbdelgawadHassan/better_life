@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 class Topsection extends StatelessWidget {
-  const Topsection({super.key, required this.Notifications_Onpressed});
+  const Topsection({super.key, required this.Notifications_Onpressed, required this.text});
   final VoidCallback Notifications_Onpressed;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-      const Text(
-        "Find your desire\n healt solution",
+       Text(
+        text,
         style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
       ),
       const Spacer(
