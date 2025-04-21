@@ -1,3 +1,4 @@
+import 'package:better_life/ui/home/HomeMainScreen/AppointmentScreen.dart';
 import 'package:better_life/ui/home/HomeMainScreen/HomeMainScreen.dart';
 import 'package:better_life/ui/home/profileScreen/profileScreen.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> pages = [
    const Homemainscreen(),
    const  Center(child: Text("Messages", style: TextStyle(fontSize: 22))),
-   const  Center(child: Text("Appointments", style: TextStyle(fontSize: 22))),
+   const Appointmentscreen(),
     profileScreen(),
   ];
 
