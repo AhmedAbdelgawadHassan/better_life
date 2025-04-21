@@ -8,13 +8,14 @@ class Distancefromdoctor extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(Icons.location_on, color: Colors.grey, size: 15,),
+        Icon(Icons.location_on, color: Color(0xff3B4453), size: 18,),
+        
         FittedBox(child: SizedBox(
           width: 80,
           child: Text("${distance}m away",
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
-          style:  TextStyle(color:  Colors.grey,fontSize: 13,fontWeight: FontWeight.bold),))),
+          style:  TextStyle(color:  Color(0xff3B4453),fontSize: 15,fontWeight: FontWeight.bold),))),
       ],
     );
   }
