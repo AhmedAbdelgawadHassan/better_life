@@ -39,7 +39,7 @@ class _SchedulescreenState extends State<Schedulescreen> {
                 onTabSelected: _onTabSelected,
               ),
               const SizedBox(height: 20),
-              sheduleItem(
+          const  sheduleItem(
                   DoctorName: "Dr. ALi Ebrahim",
                   Spaclist: "chardiologist",
                   DoctorImage:

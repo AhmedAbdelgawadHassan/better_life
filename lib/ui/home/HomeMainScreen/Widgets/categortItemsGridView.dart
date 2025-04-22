@@ -1,4 +1,4 @@
-import 'package:better_life/Data/categoriesDoctorList.dart';
+import 'package:better_life/ui/home/HomeMainScreen/Widgets/Categoriesdoctorlist.dart';
 import 'package:flutter/material.dart';
 
 class categortItemsGridView extends StatelessWidget {
